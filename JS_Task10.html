@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[19,20,30,40,50];
+        console.log(arr.every(checkAge));
+        function checkAge(age) {
+             return age > 18;
+        }
+        console.log(arr.findIndex(arr=> arr===20));
+
+        function canVote(age) {
+            return age >= 18;
+        }
+ 
+    function func() {
+        let filtered = [24, 33, 16, 40].filter(canVote);
+        console.log(filtered);
+    }
+    func();
+    </script>
+</body>
+</html>

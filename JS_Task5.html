@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Reverse a number
+    <!-- <input type="number" id = "in" placeholder="Enter a number">
+    <p id="demo"></p>
+    <input type="submit" onclick="return reverse()"> -->
+
+    <script>
+        // function reverse(){
+            // var x = document.getElementById('in').innerHTML;
+            var x = prompt("Enter the number");
+            var c="";
+            for(var i=0;i<x.length;i++){
+                c+=x[x.length-1-i];
+            }
+            alert(c);
+        // }
+    </script>
+</body>
+</html>

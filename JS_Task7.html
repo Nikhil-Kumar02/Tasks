@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">1st Number:</label>
+        <input type="number" id="first"><br><br>
+        <label for="">2nd Number:</label>
+        <input type="number" id="second"><br><br>
+
+        <input type="button" value="Multiply" onclick="mul()"></input>
+        <input type="button" value="Divide" onclick="div()"></input><br><br>
+
+        The Result is:
+        <input id="answer">
+        <!-- <p id = "answer"></p> -->
+        <script>
+            function mul(){
+                var a,b,c;
+                a=Number(document.getElementById("first").value);
+                b=Number(document.getElementById("second").value);
+                c= a * b;
+                document.getElementById("answer").value= c;
+            }
+            function div(){
+                var a,b,c;
+                a=Number(document.getElementById("first").value);
+                b=Number(document.getElementById("second").value);
+                c= a / b;
+                document.getElementById("answer").value= c;
+            }
+        </script>
+    </form>
+</body>
+</html>
